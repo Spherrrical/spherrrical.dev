@@ -23,7 +23,7 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
                 <NavLink href="/projects">Projects</NavLink>
-                <Link className="text-zinc-600 transition hover:text-zinc-400" href="https://github.com/">Source Code</Link>
+                <Link className="text-zinc-600 transition hover:text-zinc-400" href="https://github.com/Spherrrical/spherrrical.dev">Source Code</Link>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Musa Malik. All rights
