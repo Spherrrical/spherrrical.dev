@@ -239,7 +239,7 @@ export default function Home({ articles }) {
             Software engineer, photographer, and student.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Musa, a software engineer and student at Raisbeck Aviation High School based in Seattle, Washington. I'm currently an intern at Katanemo where I build fine-grained authorization systems and maintain numerous tasks.
+            I&apos;m Musa, a software engineer and student at Raisbeck Aviation High School based in Seattle, Washington. I&apos;m currently an intern at Katanemo where I build fine-grained authorization systems and maintain numerous tasks.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
