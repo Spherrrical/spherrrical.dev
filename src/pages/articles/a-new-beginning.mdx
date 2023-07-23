@@ -1,0 +1,132 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+
+export const meta = {
+
+author: 'Musa Malik',
+
+    date: '2023-07-23',
+
+    title: 'A new beginning: Katanemo',
+
+    description:
+
+"The core of fine-grained permissions at it's peak. Read more to find out my time at Katanemo."
+
+}
+
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+When you think of collaboration, you think of Figma, Google Drive or Dropbox. But think of it from a developers side. How do you implement fine-grained permissions that protect user data? How do you implement a safe collaboration experience that is easy to use and understand? Katanemo understands these questions and offers a solution.
+
+Katanemo is a new startup that I have been working on for the past few months. It is focused on bringing customers fine-grained permissions and safe collaboration features. It also bundles as an identity service provider, helping developers setup with ease.
+
+My work at Katanemo included developing the service documentation, API documentation, working on the console experience and developing front-end SDK's. Let's show you some of my process.
+
+## Service Documentation
+
+The CEO of Katanemo, [Salman Paracha](#) had asked me to do service documentation + API documentation as my first line of work. But the following conditions needed to be met:
+
+1. The documentation should be easy to understand and read.
+2. It should be easy to navigate.
+3. It offers a search function.
+4. It should provide a visual editing tool.
+5. It should maintain Katanemo's branding.
+
+On paper this all sounds pretty simple, but things are tricky when you include search functionality.
+
+My first thought was to find an open source tool that will allow me to write .MD files. MD files are called Markdown files, and it's what this very article is written on. It's a static notepad basically. After some searching, I came across [Docusaurus](#), an open-source, free to use documentation building tool. Only problem here was it was extremely hard to brand and it looked plain. I decided to use it.
+
+
+```js
+
+navbar: {
+    style: 'dark',
+        logo: {
+          alt: 'Katanemo Documentation',
+          src: 'img/katanemologo-web.png',
+          href: 'https://katanemo.com/'
+        },
+        items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'defaultSidebar',
+            position: 'right',
+            label: 'Documentation',
+          },
+          {
+            to: '/api',
+            label: 'API',
+            position: 'right',
+          },
+        ]
+},
+
+```
+
+
+What you see above is the `docusaurus.config.js` file. It's the universal configuration file for Docusaurus. This is all you get for your Navbar. No CSS functionality yet since you'll have to import it at the top.
+
+So what I did instead was, head over to the `src` folder and hop into the `css` folder. In there was a pre-generated CSS file called `custom.css`. I overwrote the normal navbar CSS to look like this:
+
+```css
+.navbar__item a {
+  color: #FFF; /* Set the color of navbar links to white */
+}
+
+/* Navbar active link */
+.navbar__item a.navbar__link--active {
+  color: #FFF; /* Set the color of the active navbar link to white */
+}
+
+/* Hide the light mode icon in the navbar */
+nav[data-theme='light'] .navbar__item--icon {
+  display: none;
+}
+
+
+.footer {
+  /* Change font name and add file to comply w Katanemo brand */
+  font-family: 'Roboto', sans-serif;
+  background-color: #064C59;
+}
+
+.navbar {
+  /* Change font name and add file to comply w Katanemo brand */
+  font-family: 'Roboto', sans-serif;
+  color: #31C887;
+  background-color: #0C292F;
+}
+```
+
+The navbar now complied with Katanemo branding, but we still had to add search functionality to the navbar. This is where things get complicated.
+
+To ensure that our documentation had a search functionality, I looked thru multiple search engines but came across only 1 sutiable option.
+
+In our `docusaurus.config.js` file, I added an object for the `plugins` dict.
+
+```js
+require.resolve("@cmfcmf/docusaurus-search-local"),
+````
+
+
+And boom! A new search engine appeared to the top right of the navbar. Only problem now? It was really bad. Searches would be triggered by letters not by keywords, meaning if I were to search for the letter A, it would point me to every single page that had that letter in it.
+
+Now because of time and the constraint on finding other searches, we decided to leave it be and fix it later on with Next.js and TailwindCSS (which is upcoming).
+
+You can check out the documentation [here](https://katanemo.github.io/katanemo-aaa/).
+
+## API Documentation
+
+API was rather simple and short, I used a plugin called Redocusaurus that would automatically pick up my .YAML file (a file for API's) and convert it into beautiful looking documentation.
+
+You can check that out [here](https://katanemo.github.io/katanemo-aaa/api).
+
+## Console Experience
+
+Now because there are 4 other developers who are experienced in fullstack development, I didn't get the chance to fully develop the console as I joined the team a week before release of Katanemo's services. However, because of the time constraint those guys had, the console wasn't fully polished. So, in my freetime, I would tweak API usages and TailwindCSS margin errors to align and beautify the experience.
+
+The console experience is currently only available to Katanemo's customers, but I will be sure to update this article once it's released to the public.
+
+### End of article!
