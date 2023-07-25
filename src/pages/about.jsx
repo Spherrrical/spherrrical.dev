@@ -70,7 +70,7 @@ export default function About() {
                 easier than ever to share my creations to the world.
               </p>
               <p>
-                I'm a self-taught developer, designer, and photographer. I'm currently a student at Raisbeck Aviation High School, where I'm studying computer science. I've got alot of roles at
+                I'm a self-taught developer, designer, and photographer. I like taking photos of cars, and I'm a pretty big car enthusiast. I'm currently a student at Raisbeck Aviation High School, where I'm studying computer science. I've got alot of roles at
                 my school, some to name are: TSA member, DECA President, BSU Public Relations, ASB Public Relations, and more.
               </p>
               <p>

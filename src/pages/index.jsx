@@ -13,10 +13,15 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import logoKatanemo from '@/images/logos/katanemo.svg'
+import logoShopzq from '@/images/logos/shopzq.svg'
 import image1 from '@/images/photos/image-1.jpeg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpeg'
+import image5 from '@/images/photos/image-5.jpeg'
+import image6 from '@/images/photos/image-6.jpeg'
+import image7 from '@/images/photos/image-7.jpeg'
+import image8 from '@/images/photos/image-8.jpeg'
 import { formatDate } from '@/lib/formatDate'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -66,6 +71,29 @@ function BriefcaseIcon(props) {
     </svg>
   )
 }
+
+function EducationIcon(props) {
+  return (
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          {...props}
+      >
+          <path stroke-linecap="round" stroke-linejoin="round" className="stroke-zinc-400 dark:stroke-zinc-500" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+          <path stroke-linecap="round" stroke-linejoin="round" className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+      </svg>
+  )
+}
+
+// <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+//      className="w-6 h-6">
+//     <path stroke-linecap="round" stroke-linejoin="round"
+//           d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/>
+// </svg>
+
 
 function ArrowDownIcon(props) {
   return (
@@ -144,6 +172,16 @@ function Resume() {
         dateTime: new Date().getFullYear(),
       },
     },
+    {
+      company: 'ShopZQ',
+      title: 'Logistics, Software Engineer',
+      logo: logoShopzq,
+      start: 'July 2023',
+      end: {
+        label: 'Present',
+        dateTime: new Date().getFullYear(),
+      },
+    },
   ]
 
   return (
@@ -186,37 +224,106 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
+      <Button href="https://spherrrical.s3.us-west-2.amazonaws.com/Musa+Malik+-+Resume+-+Jul+14.pdf" variant="secondary" className="group mt-6 w-full">
+        Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
     </div>
   )
 }
 
-function Photos() {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+function Courses() {
+  let resume = [
+    {
+      course: 'AP Computer Science',
+      grade: 'Junior Year',
+    },
+    {
+      course: 'AP Environmental Science',
+      grade: 'Junior Year',
+    },
+    {
+        course: 'AP US History',
+        grade: 'Junior Year',
+    },
+      {
+          course: 'Phoenix Award',
+          grade: 'Graphics Art & Multimedia',
+      },
+  ]
 
   return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4].map((image, imageIndex) => (
+      <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
+        <h2 className="flex text-sm font-semibold text-zinc-900 dark:text-zinc-100">
+          <EducationIcon className="h-6 w-6 flex-none" />
+          <span className="ml-3">Courses & Achievements</span>
+        </h2>
+        <ol className="mt-6 space-y-4">
+          {resume.map((role, roleIndex) => (
+              <li key={roleIndex} className="flex gap-4">
+                <dl className="flex flex-auto flex-wrap gap-x-2">
+                  <dt className="sr-only">Course</dt>
+                  <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                    {role.course}
+                  </dd>
+                  <dt className="sr-only">Grade</dt>
+                  <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+                    {role.grade}
+                  </dd>
+                </dl>
+              </li>
+          ))}
+        </ol>
+      </div>
+  )
+}
+
+function Photos() {
+  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations2 = ['-rotate-2', 'rotate-2', '-rotate-2', 'rotate-2', 'rotate-2']
+
+  return (
+    <div className="mt-16 sm:mt-12">
+
+      <div className="-my-4 flex justify-center gap-5  overflow-hidden py-4 sm:gap-8">
+        {[image1, image2, image3, image4,].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-3xl',
               rotations[imageIndex % rotations.length]
             )}
           >
             <Image
               src={image}
               alt=""
-              sizes="(min-width: 640px) 18rem, 11rem"
+              sizes="(min-width: 1940px) 20rem, 20rem"
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
         ))}
       </div>
+
+
+      <div className="my-4 flex justify-center gap-5  overflow-hidden py-4 sm:gap-8">
+        {[image5, image6, image8, image7].map((image, imageIndex) => (
+            <div
+                key={image.src}
+                className={clsx(
+                    'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-3xl',
+                    rotations2[imageIndex % rotations2.length]
+                )}
+            >
+              <Image
+                  src={image}
+                  alt=""
+                  sizes="(min-width: 1940px) 20rem, 20rem"
+                  className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+        ))}
+      </div>
+
     </div>
   )
 }
@@ -258,6 +365,12 @@ export default function Home({ articles }) {
               icon={LinkedInIcon}
             />
           </div>
+
+        </div>
+      </Container>
+      <Container className="mt-24">
+        <div className="text-3xl font-bold tracking-tight text-zinc-800 mt-9 dark:text-zinc-100">
+          Some of my photography work:
         </div>
       </Container>
       <Photos />
@@ -269,8 +382,9 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 justify-center lg:pl-16 xl:pl-24">
-            <Newsletter />
             <Resume />
+            <Courses />
+              <Newsletter />
           </div>
         </div>
       </Container>
