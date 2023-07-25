@@ -247,7 +247,7 @@ function Courses() {
         grade: 'Junior Year',
     },
       {
-          course: 'Phoenix Award',
+          course: 'The Right Stuff Award',
           grade: 'Graphics Art & Multimedia',
       },
   ]
