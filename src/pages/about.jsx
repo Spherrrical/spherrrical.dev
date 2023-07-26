@@ -11,7 +11,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
-import Signature from '@/images/signature.svg'
+import Signature from '@/images/Signature.svg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
