@@ -11,6 +11,7 @@ import {
   TwitterIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import Signature from '@/images/signature.svg'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -97,6 +98,12 @@ export default function About() {
               >
                 musa@spherrrical.dev
               </SocialLink>
+              <Image
+                  src={Signature}
+                  alt=""
+                  sizes="(min-width: 512px) 15rem, 15rem"
+                  className="rounded-2xl w-20 mt-5"
+              />
             </ul>
           </div>
         </div>
