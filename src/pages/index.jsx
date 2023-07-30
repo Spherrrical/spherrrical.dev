@@ -14,6 +14,7 @@ import {
 } from '@/components/SocialIcons'
 import logoKatanemo from '@/images/logos/katanemo.svg'
 import logoShopzq from '@/images/logos/shopzq.svg'
+import logoGaari from '@/images/logos/gaari.svg'
 import image1 from '@/images/photos/image-1.jpeg'
 import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
@@ -162,6 +163,16 @@ function Newsletter() {
 
 function Resume() {
   let resume = [
+      {
+          company: 'Gaari',
+          title: 'Founder/CEO',
+          logo: logoGaari,
+          start: 'July 2023',
+          end: {
+              label: 'Present',
+              dateTime: new Date().getFullYear(),
+          },
+      },
     {
       company: 'Katanemo',
       title: 'Software Engineer Intern',
