@@ -61,13 +61,38 @@ const files = [
         source:
             'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7542.jpeg',
     },
-
-
-
-
-
-
-
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-1.jpeg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-2.jpg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-3.jpg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-4.jpeg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-5.jpeg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-6.jpeg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-7.jpeg"
+    },
+    {
+        source:
+            "https://spherrrical.s3.us-west-2.amazonaws.com/image-8.jpeg"
+    },
 ]
 
 function Photos() {
