@@ -173,7 +173,7 @@ function Resume() {
       logo: logoKatanemo,
       start: 'May 2023',
       end: {
-        label: 'Present',
+        label: 'September 2023',
         dateTime: new Date().getFullYear(),
       },
     },
@@ -229,7 +229,7 @@ function Resume() {
           </li>
         ))}
       </ol>
-      <Button href="https://spherrrical.s3.us-west-2.amazonaws.com/Musa+Malik+-+Resume+-+Jul+14.pdf" variant="secondary" className="group mt-6 w-full">
+      <Button href="http://dw9ge5zj649fn.cloudfront.net/MusaMalikResumeSep20.pdf" variant="secondary" className="group mt-6 w-full">
         Download Resume
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
       </Button>
@@ -244,7 +244,7 @@ function Courses() {
       grade: 'Junior Year',
     },
     {
-      course: 'AP Environmental Science',
+      course: 'AP Language and Composition',
       grade: 'Junior Year',
     },
     {

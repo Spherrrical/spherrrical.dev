@@ -31,67 +31,67 @@ function LinkIcon(props) {
 const files = [
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7438.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7438.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7439.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7439.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7440.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7440.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7403.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7403.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7409.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7409.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7417.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7417.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7541.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7541.jpeg',
     },
     {
         source:
-            'https://spherrrical.s3.us-west-2.amazonaws.com/_MG_7542.jpeg',
+            'http://dw9ge5zj649fn.cloudfront.net/_MG_7542.jpeg',
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-1.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-1.jpeg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-2.jpg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-2.jpg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-3.jpg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-3.jpg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-4.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-4.jpeg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-5.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-5.jpeg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-6.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-6.jpeg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-7.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-7.jpeg"
     },
     {
         source:
-            "https://spherrrical.s3.us-west-2.amazonaws.com/image-8.jpeg"
+            "http://dw9ge5zj649fn.cloudfront.net/image-8.jpeg"
     },
 ]
 
